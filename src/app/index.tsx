@@ -3,11 +3,11 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import Colourwheel from './components/Colourwheel/Colourwheel';
+import ColourWheel from './components/ColourWheel/ColourWheel';
 
 ReactDOM.render(
   <React.Fragment>
-    <Colourwheel />
+    <ColourWheel />
   </React.Fragment>,
   document.getElementById('App'),
 );
