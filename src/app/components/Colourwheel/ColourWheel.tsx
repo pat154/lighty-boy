@@ -4,7 +4,7 @@ import iro from '@jaames/iro';
 export default class extends React.Component {
 
   private iroColourPickerElement = React.createRef<HTMLDivElement>();
-  private webSocket = new WebSocket('ws://192.168.1.102:8080');
+  private webSocket = new WebSocket(`ws://${document.location.hostname}:8080`);
 
   componentDidMount() {
     try {
