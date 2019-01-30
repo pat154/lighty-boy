@@ -1,15 +1,19 @@
 import * as React from 'react';
 import iro from '@jaames/iro';
 
+import ColourWheelContainer from './ColourWheelContainer';
+
 export default class extends React.Component {
 
   private iroColourPickerElement = React.createRef<HTMLDivElement>();
-  private webSocket = new WebSocket(`ws://${document.location.hostname}:8080`);
+  private webSocket: WebSocket = new WebSocket(`ws://${document.location.hostname}:8080`);
 
   componentDidMount() {
     try {
-      const colourPicker = new iro.ColorPicker('.colourwheel');
-      const attachListener = () => {
+      const colourPicker = new iro.ColorPicker('.colourwheel', {
+        display: 'inline-block',
+      });
+      const attachListener = (): void => {
         colourPicker.on('color:change', () => {
           try {
             this.webSocket.send(JSON.stringify(colourPicker.color.rgb));
@@ -19,13 +23,10 @@ export default class extends React.Component {
         });
       };
       if (this.webSocket.readyState !== 1) {
-        alert('setting onopen');
         this.webSocket.onopen = () => {
-          alert('connection open');
           attachListener();
         };
       } else {
-        alert('attaching');
         attachListener();
       }
     } catch (e) {
@@ -34,6 +35,13 @@ export default class extends React.Component {
   }
 
   public render() {
-    return <div ref={this.iroColourPickerElement} className="colourwheel"></div>;
+    return (
+      <ColourWheelContainer>
+        <div
+          style={{ height: '100%' }}
+          ref={this.iroColourPickerElement} className="colourwheel">
+        </div>
+      </ColourWheelContainer>
+    );
   }
 }
