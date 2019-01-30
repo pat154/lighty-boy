@@ -10,7 +10,9 @@ import { GlobalStyle, Main } from './layout';
 ReactDOM.render(
   <React.Fragment>
     <GlobalStyle />
-    <Header>lightyBoy</Header>
+    <Header>
+      lighty<span className="Header__accent">B</span>oy
+    </Header>
     <Main>
       <ColourWheel />
     </Main>
