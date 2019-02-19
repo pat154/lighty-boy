@@ -21,4 +21,7 @@ export const GlobalStyle = createGlobalStyle`
 export const Main = styled.section`
   height: calc(100vh - ${HEADER_HEIGHT});
   padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;

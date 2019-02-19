@@ -1,12 +1,36 @@
-import styled from 'styled-components';
+import { connect } from 'react-redux';
 
-export default styled.div`
-  text-align: center;
-  height: 100%;
+import ColourWheel from './ColourWheel';
+import { UPDATE_COLOUR } from './actionTypes';
+import { RGBColour, ColourWheelState } from '../../definitions/ColourWheel';
 
-  > div {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
+
+const currentColour: RGBColour = {
+    r: 255,
+    g: 255,
+    b: 255,
+};
+
+const initialState:ColourWheelState = {
+  currentColour
+};
+
+const mapStateToProps = (state: any = initialState) => {
+  return {
+    currentColour: state.colourWheel.currentColour
   }
-`;
+}
+
+const mapDispatchToProps = (dispatch: any) => {
+  return {
+    updateColour: (colour: RGBColour) => dispatch({
+      type: UPDATE_COLOUR,
+      payload: colour
+    })
+  }
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(ColourWheel);

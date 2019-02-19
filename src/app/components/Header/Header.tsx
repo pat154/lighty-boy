@@ -1,21 +1,14 @@
 import * as React from 'react';
 
 import H1 from '../../elements/H1';
+import Header from './Header.styles';
 
-import Header from './header.style';
-
-export default class extends React.Component {
-
-  componentDidMount() {
-  }
-
-  public render() {
-    return (
-      <Header>
-        <H1>
-          {this.props.children}
-        </H1>
-      </Header>
-    );
-  }
-}
+export default (props: any) => {
+  return (
+    <Header accentColour={props.accentColour}>
+      <H1>
+        {props.children}
+      </H1>
+    </Header>
+  );
+};

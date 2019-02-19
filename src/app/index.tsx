@@ -2,20 +2,23 @@
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 
-import ColourWheel from './components/ColourWheel/ColourWheel';
-import Header from './components/Header/Header';
+import store from './redux/store';
+import ColourWheel from './components/ColourWheel/ColourWheelContainer';
+import Header from './components/Header/HeaderContainer';
 import { GlobalStyle, Main } from './layout';
 
 ReactDOM.render(
-  <React.Fragment>
+  <Provider store={store}>
     <GlobalStyle />
+    { console.log(store) }
     <Header>
       lighty<span className="Header__accent">B</span>oy
     </Header>
     <Main>
       <ColourWheel />
     </Main>
-  </React.Fragment>,
+  </Provider>,
   document.getElementById('App'),
 );
