@@ -6,9 +6,9 @@ import { HeaderState } from '../../definitions/Header';
 
 const mapStateToProps = (state: AppState) => {
   return {
-    accentColour: state.colourWheel.currentColour
-  }
-}
+    accentColour: state.colourWheel.currentColour,
+  };
+};
 
 export default connect(
   mapStateToProps,

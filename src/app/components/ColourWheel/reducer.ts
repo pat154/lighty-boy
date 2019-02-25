@@ -1,6 +1,6 @@
-import { UPDATE_COLOUR } from "./actionTypes";
+import { UPDATE_COLOUR } from './actions';
+import { ColourAction } from './actionTypes';
 import { RGBColour } from '../../definitions/ColourWheel';
-import { Action } from "redux";
 
 const currentColour: RGBColour = {
   r: 255,
@@ -9,19 +9,14 @@ const currentColour: RGBColour = {
 };
 
 const initialState = {
-  currentColour
+  currentColour,
 };
-
-interface ColourAction extends Action {
-  type: string;
-  payload: RGBColour;
-}
 
 export default (state = initialState, action: ColourAction) => {
   switch (action.type) {
     case UPDATE_COLOUR: {
       return Object.assign({}, state, {
-        currentColour: action.payload
+        currentColour: action.payload,
       });
     }
     default: {

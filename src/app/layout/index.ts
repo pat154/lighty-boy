@@ -19,7 +19,6 @@ export const GlobalStyle = createGlobalStyle`
 
 // tslint:disable-next-line:variable-name
 export const Main = styled.section`
-  height: calc(100vh - ${HEADER_HEIGHT});
   padding-top: 10px;
   display: flex;
   align-items: center;
