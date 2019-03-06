@@ -12,7 +12,7 @@ const Container = styled.div`
 export default class extends React.Component<ColourWheelProps> {
 
   private iroColourPickerElement = React.createRef<HTMLDivElement>();
-  private webSocket: WebSocket = new WebSocket(`ws://${document.location.hostname}:8080`);
+  private webSocket: WebSocket = new WebSocket(`ws://${document.location.hostname}:8081`);
 
   componentDidMount() {
     try {

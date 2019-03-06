@@ -7,7 +7,7 @@
   <body>
     <script>
       const host = document.location.hostname;
-      const webSocket = new WebSocket('ws://'+host+':8080');
+      const webSocket = new WebSocket('ws://'+host+':8081');
       console.log(webSocket);
       webSocket.onmessage = (msg) => {
         const rgb = JSON.parse(msg.data);
