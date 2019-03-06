@@ -9,6 +9,7 @@
     "watch:server": "nodemon --exec ts-node -- ./index.ts",
     "watch:app": "webpack --watch --progress --mode=development ./src/app/index.tsx",
     "start": "npm install && npm run compile && ts-node -- ./index.ts",
+    "quickstart": "ts-node -- ./index.ts",
     "compile": "webpack --progress --mode=development ./src/app/index.tsx"
   },
   "repository": {

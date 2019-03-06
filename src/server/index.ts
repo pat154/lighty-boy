@@ -3,7 +3,10 @@ import SocketServer from './SocketServer/SocketServer';
 
 import { HTTP_PORT_NUMBER, SOCKET_PORT_NUMBER } from './utils/constants';
 
-import './utils/lights';
+import { clear } from './utils/lights';
+
+// Clear any current LED colours
+clear();
 
 // Start the HTTP and WebSocket server
 export default () => {
