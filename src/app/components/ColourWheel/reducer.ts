@@ -1,6 +1,6 @@
 import { UPDATE_COLOUR } from './actions';
 import { ColourAction } from './actionTypes';
-import { RGBColour } from '../../definitions/ColourWheel';
+import { RGBColour } from '../../../definitions/ColourWheel';
 
 const currentColour: RGBColour = {
   r: 255,

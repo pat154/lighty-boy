@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 
 import ColourWheel from './ColourWheel';
 import { UPDATE_COLOUR } from './actions';
-import { RGBColour, ColourWheelState } from '../../definitions/ColourWheel';
+import { RGBColour, ColourWheelState } from '../../../definitions/ColourWheel';
 
 const currentColour: RGBColour = {
   r: 255,

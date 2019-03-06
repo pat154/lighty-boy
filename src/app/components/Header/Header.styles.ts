@@ -4,7 +4,7 @@ import { darken } from 'polished';
 
 import { COLOUR_BODY_BACKGROUND } from '../../constants';
 import { HEIGHT, COLOUR_ACCENT } from './constants';
-import { RGBColour } from '../../definitions/ColourWheel';
+import { RGBColour } from '../../../definitions/ColourWheel';
 
 export interface HeaderAccentProps {
   accentColour: RGBColour;
