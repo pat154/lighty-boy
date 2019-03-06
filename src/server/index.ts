@@ -3,6 +3,8 @@ import SocketServer from './SocketServer/SocketServer';
 
 import { HTTP_PORT_NUMBER, SOCKET_PORT_NUMBER } from './utils/constants';
 
+import './utils/lights';
+
 // Start the HTTP and WebSocket server
 export default () => {
   const wss = SocketServer.create(SOCKET_PORT_NUMBER);

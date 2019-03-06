@@ -2,11 +2,12 @@ import * as React from 'react';
 import iro from '@jaames/iro';
 import styled from 'styled-components';
 
-import { ColourWheelProps, RGBColour } from '../../definitions/ColourWheel';
+import { ColourWheelProps, RGBColour } from '../../../definitions/ColourWheel';
 
 const Container = styled.div`
   height: auto;
   width: 100%;
+  max-width: 500px;
 `;
 export default class extends React.Component<ColourWheelProps> {
 

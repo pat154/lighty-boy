@@ -1,5 +1,5 @@
 
-import { RGBColour } from '../../definitions/ColourWheel';
+import { RGBColour } from '../../../definitions/ColourWheel';
 
 const accentColour: RGBColour = {
   r: 245,

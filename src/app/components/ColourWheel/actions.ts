@@ -1,3 +1,1 @@
-import { UPDATE_COLOUR } from './actionTypes';
-import { RGBColour } from '../../definitions/ColourWheel';
-
+export const UPDATE_COLOUR = 'UPDATE_COLOUR';
