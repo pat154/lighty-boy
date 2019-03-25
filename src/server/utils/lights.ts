@@ -20,5 +20,6 @@ export const clear = () => {
       console.error(`exec error: ${error}`);
       return;
     }
+    console.log('Colours cleared');
   });
-}
+};
