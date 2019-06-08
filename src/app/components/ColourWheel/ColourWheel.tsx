@@ -3,6 +3,7 @@ import iro from '@jaames/iro';
 import styled from 'styled-components';
 
 import { ColourWheelProps, RGBColour } from '../../../definitions/ColourWheel';
+import { SOCKET_PORT_NUMBER } from '../../../server/utils/constants';
 
 const Container = styled.div`
   height: auto;
@@ -12,7 +13,8 @@ const Container = styled.div`
 export default class extends React.Component<ColourWheelProps> {
 
   private iroColourPickerElement = React.createRef<HTMLDivElement>();
-  private webSocket: WebSocket = new WebSocket(`ws://${document.location.hostname}:8081`);
+  private webSocket: WebSocket =
+    new WebSocket(`ws://${document.location.hostname}:${SOCKET_PORT_NUMBER}`);
 
   componentDidMount() {
     try {
@@ -23,8 +25,12 @@ export default class extends React.Component<ColourWheelProps> {
         colourPicker.on('color:change', () => {
           const rgb = colourPicker.color.rgb as RGBColour;
           this.props.updateColour(rgb);
+          const action = {
+            type: 'COLOUR',
+            colour: rgb,
+          };
           try {
-            this.webSocket.send(JSON.stringify(rgb));
+            this.webSocket.send(JSON.stringify(action));
           } catch (e) {
             alert(e);
           }

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>CYNC | cyclic drum machine</title>
+        
+        <!-- Load CYNC scripts and third party libraries -->
+        <script src="cync/code/lib/jquery-3.2.1.min.js"></script>
+        <script src="cync/code/lib/two.min.js"></script>
+        <script src="cync/code/lib/Tween.js"></script>
+        <script src="cync/code/lib/jsmidgen.js"></script>
+        <script src="cync/code/lib/FileSaver.min.js"></script>
+        <script src='cync/code/util.js'></script>
+        <script src='cync/code/saveState.js'></script>
+        <script src='cync/code/EventManager.js'></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.5/howler.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tone/0.12.13/Tone.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+        <link href="code/styles.css" type="text/css" rel="stylesheet">
+        
+        <!-- Load favicon data -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+        <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#f6a450">
+        <meta name="msapplication-TileColor" content="#fafafa">
+        <meta name="theme-color" content="#fafafa">
+    </head>
+    
+    <body>
+        <div class="popup">
+            <div class="screen_darkener"></div>
+            <iframe class="video" src="" 
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>
+        </div>
+        <div id="main-container"></div>
+        <script src='cync/code/main.js'></script>
+        <script src='cync/integrate.js'></script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" version="1.1" viewBox="0 0 52.916665 52.916668" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(0 -244.08)">
+  <g>
+   <ellipse cx="22.205" cy="268.53" rx="4.2252" ry="4.2333" style="paint-order:markers stroke fill"/>
+   <path d="m24.324 252.59a2.1148 2.1148 0 0 0 -2.0273 1.5078c-0.20928 0.69898-0.55582 2.0343-1.1074 4.9805a2.1148 2.1148 0 1 0 4.1562 0.77735c0.35747-1.9093 0.49141-2.3258 0.66992-3.0371h2.8984l4.4688 23.289h-11.768c0.16894-0.87053 0.26981-1.2236 0.5625-2.7891a2.1151 2.1151 0 1 0 -4.1582 -0.77734c-0.57928 3.0983-0.90929 4.7582-1.0039 5.0742a2.1148 2.1148 0 0 0 2.0273 2.7207h16.9a2.1148 2.1148 0 0 0 2.0762 -2.5137l-5.2812-27.516a2.1148 2.1148 0 0 0 -2.0762 -1.7168z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+   <path d="m13.74 257.88a2.0933 2.0933 0 0 0 -1.4609 3.5918l13.732 13.758a2.0933 2.0933 0 1 0 2.9629 -2.957l-13.732-13.758a2.0933 2.0933 0 0 0 -1.502 -0.63477z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+  </g>
+ </g>
+</svg>

@@ -3,7 +3,7 @@ import serveStatic from 'serve-static';
 import http from 'http';
 
 const app = connect();
-const serve = serveStatic('./dist', {
+const serve = serveStatic('./public/dist', {
   index: ['index.html', 'index.htm'],
 }) as connect.HandleFunction;
 
